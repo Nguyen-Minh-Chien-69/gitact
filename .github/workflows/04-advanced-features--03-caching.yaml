@@ -18,7 +18,7 @@ jobs:
           path: demo-cache
           # For info on constructing an appropriate cache key see:
           # https://github.com/actions/cache?tab=readme-ov-file#creating-a-cache-key
-          key: demo-cache-v1
+          key: demo-cache-v2
 
       # Populate directory only on miss
       - name: Populate cache directory
@@ -34,7 +34,7 @@ jobs:
         uses: actions/cache@638ed79f9dc94c1de1baef91bcab5edaa19451f4 # v4.2.4
         with:
           path: demo-cache
-          key: demo-cache-v1
+          key: demo-cache-v2
 
       - name: Verify cache status
         run: |
